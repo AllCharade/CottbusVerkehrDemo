@@ -9,8 +9,6 @@ import ContentManagement from "../ContentManagement";
 import ConnectionIcon from "../Svg/connection";
 import NoConnectionIcon from "../Svg/noconnection";
 
-
-
 export default function Home() {
     // pageSelector is a state variable to track which page to render.
     const [pageSelector, setPageSelector] = useState(0);
@@ -22,8 +20,6 @@ export default function Home() {
     const [time, setTime] = useState<string>(new Date().toLocaleTimeString());
 
 
-
-
     // Components to render based on pageSelector
     const loginComponent = <Login toRegistration={() => setPageSelector(1)} login={() => setPageSelector(3)} />;
     const databaseAccess = <DatabaseAccess backToMainMenu={() => setPageSelector(3)} />;
@@ -32,11 +28,7 @@ export default function Home() {
     const settings = <Settings backToMainMenu={() => setPageSelector(3)}></Settings>
     const contentManagement = <ContentManagement backToMainMenu={() => setPageSelector(3)}></ContentManagement>
 
-
     // Script Componens
-
-
-
 
     // Function to render the correct page based on pageSelector
     const renderPage = () => {

@@ -12,7 +12,6 @@ const MainMenu = (props: {
 }) => {
 
 
-
     return (
         <div className="w-full flex h-[40rem] justify-center mb-[20%] bg-[#c22727] animate-fadeInAnimation">
             <div className="w-[80%] border flex rounded-3xl bg-slate-100 shadow-xl">

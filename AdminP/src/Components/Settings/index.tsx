@@ -13,15 +13,10 @@ const Settings = (props: {
     const [error, setError] = useState(""); // Fehlernachricht für Passwortvergleich
 
 
-
-
-
     // Funktion zum Umschalten des Dark Mode
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
     };
-
-
 
 
     // Funktion zum Umschalten von Benachrichtigungen
@@ -31,16 +26,10 @@ const Settings = (props: {
 
 
 
-
-
-
     // Funktion zum Umschalten von Auto-Updates
     const toggleAutoUpdates = () => {
         setAutoUpdates(!autoUpdates);
     };
-
-
-
 
 
 
@@ -54,8 +43,6 @@ const Settings = (props: {
         setError(""); // Fehler zurücksetzen
         alert("Einstellungen gespeichert!");
     };
-
-
 
 
 
@@ -79,8 +66,6 @@ const Settings = (props: {
                         <option value="fr">Französisch</option>
                     </select>
                 </div>
-
-
 
 
 
@@ -109,9 +94,6 @@ const Settings = (props: {
 
 
 
-
-
-
                 {/* Benachrichtigungen */}
                 <div className="mb-6 flex items-center justify-between">
                     <label className="text-lg font-medium text-slate-100">Benachrichtigungen</label>
@@ -131,9 +113,6 @@ const Settings = (props: {
                         />
                     </label>
                 </div>
-
-
-
 
 
 
@@ -187,9 +166,6 @@ const Settings = (props: {
                         <option value="Africa/Nairobi">Nairobi (GMT+3)</option>
                     </select>
                 </div>
-
-
-
 
 
 
